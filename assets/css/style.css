@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Lato";
+    src: url('../font/Lato.ttf');
+}
+
+* {
+    font-family: Lato;
+}
+
+.nav-logo {
+    width: 60%;
+}
+
+.nav-item {
+    margin: 0 20px;
+}
+
+.nav-item a.nav-link.active {
+    border-bottom: 2px solid red;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    position: absolute;
+    float: right;
+    align-items: center;
+    background-image: url(../images/Bg-Home1.png);
+    width: 100%;
+    height: 100%;
+}
+
+.bem {
+    font-size: 20px;
+    color: #D52D36;
+    margin-top: 150px;
+}
+
+.kabinet h1 {
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.deskripsi p {
+    font-size: 20px;
+    color: #656B78;
+    margin-top: 30px;
+}
+
+#laptop {
+    margin-left: 111px;
+}
+
+#btn-more {
+    /* margin-top: -250px; */
+    border-radius: 15px;
+    padding: 20px 40px;
+    background-color: #D52D36;
+    border-color: #D52D36;
+}
+
+/* section vidpro */
+
+.video-profile {
+    background-image: url(../images/Bg-Home2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 911px;
+}
+
+.text-main {
+    color: #D52D36 !important;
+    margin-top: 70px;
+}
+
+.profil {
+    font-weight: 700;
+}
+
+#video {
+    margin-top: 80px;
+}
+
+/* section acara terkini */
+
+.acara-terkini{
+    background-image: url(../images/Bg-Home3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* section kabinet */
+
+.presiden{
+    background-image: url(../images/Bg-Home4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 920px;
+}
+
+.foto{
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 150px;
+
+}
+#card-kabinet{
+    background-color: transparent !important;
+    border: transparent !important;
+
+}
+#foto-kabinet{
+    border-radius: 1.25rem;
+
+}
+.text-kabinet {
+    color: #D52D36 !important;
+}
+
+
+/* box dibuat oleh */
+
+#box-made-by{
+    position: absolute;
+   
+    margin-top: -30px;
+
+}
+
+
+#telkom-footer{
+    background-image: url(../images/Bg-Footer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+height: 531px;
+}
