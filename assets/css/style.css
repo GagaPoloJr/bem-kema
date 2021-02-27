@@ -21,7 +21,22 @@
 
 .info-panel
 {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+border-radius: 20px;
+padding: 20px;
+display: flex;
+justify-content: center;
+text-align: center;
+flex-direction: row;
 }
+
+@media screen and (max-width: 767px) {
+.info-panel {
+
+}
+}
+
+
 
 .bg-footer{
     background: linear-gradient(285.81deg, #1E1E1E -1.83%, #464646 122.41%);
@@ -390,215 +405,187 @@ a.link-berita {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 1442px;
+    height: auto;
+    padding-bottom: 50px;
 }
+
+.logo-bg-menteri{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 767px) {
+    .img-visimisi{
+        width: 25%;
+    }
+    .img-visimisi2{
+        width: 40%;
+    }
+}
+
 
 .visi-misi-text {
     color: red;
     border-bottom: 5px solid red;
 }
 
-.card-visi {
+#card-visi {
     background-color: #FFFFFF;
-    width: 940px;
-    height: 260px;
-    left: 135px;
-    top: 976px;
     border: 1px solid #E2E2E2;
-    box-sizing: border-box;
     box-shadow: 0px 14px 100px rgba(39, 39, 39, 0.02);
     border-radius: 20px;
-    margin-left: 300px;
     margin-top: 50px;
+    padding: 30px;
+}
+
+.icon-visi{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: -140px;
 }
 
 .card-visi h1 {
     font-size: 30px;
-    margin-left: 30px;
-    margin-top: 30px;
+  
     font-weight: 900;
 }
 
-.card-visi p {
+#card-visi p {
     font-size: 20px;
-    margin-left: 30px;
-    margin-top: 50px;
+    margin-top: 20px;
     color: #656B78;
     line-height: 35px;
 }
 
-.card-misi {
+
+
+#card-misi {
     background-color: #FFFFFF;
-    width: 960px;
-    height: 675px;
-    left: 135px;
-    top: 976px;
     border: 1px solid #E2E2E2;
     box-shadow: 0px 14px 100px rgba(39, 39, 39, 0.02);
     border-radius: 20px;
     border-top-right-radius: 100px;
-    margin-left: 430px;
     margin-top: 50px;
+    padding: 20px;
 }
 
-.card-misi h1 {
+#card-misi h1 {
     font-weight: 900;
     font-size: 30px;
-    margin-left: 30px;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
-.card-misi p {
+#card-misi p {
     color: #656B78;
     font-size: 20px;
-    margin-left: 30px;
     margin-top: 65px;
-    line-height: 35px;
+    line-height: 25px;
 }
-.logo-bg-menteri{
+@media screen and (max-width: 767px) {
+    .icon-visi{
+        visibility: hidden;
+    }
+}
+
+
+.presiden-2 {
+    width: 100%;
+    background-image: url(../images/bg-menteri2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    padding-top: 80px;
+}
+
+.kabinet2{
+    background-image: url(../images/bg-menteri3.png);
+    /* margin-top: 150px; */
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+#foto-kabinet2 {
+    border-radius: 1.25rem;
+}
+#card-kabinetkerja {
+    background-color: transparent !important;
+    border: transparent !important;
+    text-align: center;
+}
+#foto-kabinetkerja {
+    border-radius: 1.25rem;
+  
+}
+
+.logo-bg-kemenko{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-
-.bg-menteri2 {
-    background-image: url(../images/bg-menteri2.png);
-    /* margin-top: 150px; */
-    width: 1520px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px;
-}
-
-.presiden-2 {
-    margin-top: -150px;
-}
-
-#foto-kabinet2 {
-    width: 300px;
-    border-radius: 1.25rem;
-    margin-left: 400px;
-    margin-top: 110px;
-}
-
-#foto-kabinet3 {
-    width: 300px;
-    border-radius: 1.25rem;
-    margin-left: 750px;
-    margin-top: -710px;
-}
-
-.bg-menteri3 {
-    background-image: url(../images/bg-menteri3.png);
-    /* margin-top: 150px; */
-    width: 1520px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1370px;
-}
-
-#foto-kabinet4 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 110px;
-    margin-top: -120px;
-}
-
-#foto-kabinet5 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 445px;
-    margin-top: -643px;
-}
-
-#foto-kabinet6 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 765px;
-    margin-top: -793px;
-}
-
-#foto-kabinet7 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 1080px;
-    margin-top: -944px;
-}
-
-#foto-kabinet8 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 125px;
-    margin-top: -500px;
-}
-
-#foto-kabinet9 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 445px;
-    margin-top: -650px;
-}
-
-#foto-kabinet10 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 765px;
-    margin-top: -800px;
-}
-
-#foto-kabinet11 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 1080px;
-    margin-top: -950px;
-}
-
-.bg-menteri4 {
+.kabinet3{
     background-image: url(../images/bg-menteri4.png);
     /* margin-top: 150px; */
-    width: 1390px;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: auto;
 }
+#card-menko {
+    background-color: transparent !important;
+    border: transparent !important;
+    text-align: center;
+}
+
 
 #foto-menko1 {
-    width: 250px;
     border-radius: 1.25rem;
-    margin-left: 300px;
-    margin-top: -130px;
 }
 
-#foto-menko2 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 600px;
-    margin-top: -665px;
-}
-
-#foto-menko3 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 900px;
-    margin-top: -815px;
-}
-
-.bg-menteri5 {
-   background-color: #FBFBFB;
+.kabinet4{
+    background-color: #FBFBFB;
     /* margin-top: 150px; */
     width: 100%;
+    position: relative;
 }
 
-#foto-menteri1 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 100px;
-    margin-top: -115px;
+.icon-kementerian {
+    position: absolute;
+    left: 0;
 }
+
+.logo-bg-kementrian{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    float: right;
+}
+
+#foto-menteri {
+    border-radius: 1.25rem;
+  
+}
+
+#card-menteri {
+    background-color: transparent !important;
+    border: transparent !important;
+    text-align: center;
+}
+@media screen and (max-width: 767px) {
+    .icon-kementerian{
+        width: 50%;
+    }
+}
+
+
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++ HALAMAN PROKER ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 .tugas-misi{
@@ -607,6 +594,10 @@ a.link-berita {
 #proker {
     padding-top: 110px;
 }
+
+
+
+
 
 #card-foto-ristek{
      background-color: transparent !important;
@@ -653,11 +644,23 @@ a.link-berita {
 .text-ristek {
     color: #656B78;
     font-size: 17px;
-    padding-top: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-    line-height: 28px;
+    padding: 25px;
+    line-height: 35px;
     position: center;
+}
+
+@media screen and (max-width: 767px) {
+    #card-foto-ristek{
+        transform: scale(0.8);
+        margin-top: -80px;
+    }
+    .text-ristek {
+      
+        font-size: 17px;
+        padding: 0%;
+        line-height: 25px;
+        position: center;
+    }
 }
 
 .plus-ristek{
@@ -668,48 +671,84 @@ a.link-berita {
 }
 
 .staff-ristek {
-    background-image: url(../images/bg-proker1.png);
+    background-image: url(../images/bg-proker1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 1290px;
-    margin-top: 20px;
+    height: auto;
+    margin-top: 50px;
+    padding-bottom: 100px;
 }
 
-.icon-ppl {
-    margin-left: -80px;
-    margin-top: 70px;
-}
+
+
 
 .staff {
     font-size: 30px;
-    margin-top: -125px;
-    margin-left: 40px;
     font-weight: 900;
+    margin-top: -60px;
+
 }
 
 .foto-staff {
-    width: 80%;
     background-color: transparent !important;
     border: transparent !important;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 #foto-staff1 {
     border-radius: 1.30rem;
 }
 
-.tugas-ristek {
-    margin-top: 60px;
+.tugas-misi{
+    position: relative;
+}
+.icon-ristek-atas{
+    position: absolute;
+    right: 0;
+    z-index: -1;
+}
+.icon-ristek-bawah{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+.logo-bg-tugas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    float: left;
 }
 
 .judul-tugas {
     font-size: 28px;
-    margin-top: -125px;
-    margin-left: 120px;
     font-weight: 900;
+    margin-top: -70px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .foto-staff{
+        transform: scale(0.8);
+        margin-bottom: -100px;
+
+    }
+    .logo-bg-tugas{
+    flex-direction: column;
+    float:none;
+    margin: 80px 0;
+    }
+    .icon-ristek-atas{
+        width: 50%;
+    }
+    .icon-ristek-bawah{
+        width: 50%;
+        z-index: -1;
+    }
 }
 
 .card-ristek2 {
@@ -725,24 +764,43 @@ a.link-berita {
     color: #656B78;
     font-size: 18px;
     padding-top: 30px;
-    padding-left: 25px;
-    padding-right: 50px;
     line-height: 35px;
     position: center;
 }
 
+.logo-bg-misi{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    float: right;
+    margin-bottom: -60px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .text-tugas{
+        font-size: 16px;
+        line-height:25px;
+    }
+    .logo-bg-misi{
+    flex-direction: column;
+    float:none;
+    margin: 80px 0;   }
+}
+
 .judul-misi {
     font-size: 28px;
-    margin-top: 100px;
- 
+    margin-top: -70px;
+text-align: center;
     font-weight: 900;
 }
 
 .misi-ristek {
-    margin-top: -70px;
    
-    width: 15%;
 }
+
+
 
 .card-ristek3 {
     float: right;
@@ -759,19 +817,22 @@ a.link-berita {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin-top: 20px;
 }
 
 
-
+.logo-bg-proker{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .proker-kemenristek {
     font-size: 30px;
     font-weight: 900;
     margin-top: -70px;
     text-align: center;
-
-   
 }
 
 #card-proker {
