@@ -19,58 +19,189 @@
     border-bottom: 2px solid red;
 }
 
-.hero {
-    position: relative;
+.info-panel
+{
 }
 
-.hero-img {
-    position: absolute;
-    float: right;
-    align-items: center;
+.bg-footer{
+    background: linear-gradient(285.81deg, #1E1E1E -1.83%, #464646 122.41%);
+
+    color: #fff;
+    padding-bottom: 30px;
+}
+
+a.text-link{
+    color: #DEDEDE;
+    line-height: 1.6;
+    transition: 0.3s;
+
+}
+a.text-link:hover{
+    text-decoration: none;
+    color: #F54F6D;
+
+}
+  /* footer social icons */
+
+ul.social-network {
+    list-style: none;
+    display: inline;
+    margin-left: 0 !important;
+    padding: 0;
+  }
+  
+  ul.social-network li {
+    display: inline;
+    margin: 0 5px;
+  }
+  
+  
+  
+  .social-network a.icoFacebook:hover {
+    background-color: #3B5998;
+  }
+  
+  .social-network a.icoLinkedin:hover {
+    background-color: #007bb7;
+  }
+
+  .social-network a.icoInstagram:hover {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  }
+  
+  .social-network a.icoFacebook:hover i,
+  .social-network a.icoLinkedin:hover i,
+  .social-network a.icoInstagram:hover i {
+    color: #fff;
+  }
+  
+  .social-network a.socialIcon:hover,
+  .socialHoverClass {
+    color: #44BCDD;
+  }
+  
+  .social-circle li a {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto 0 auto;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+  }
+  
+  .social-circle li i {
+    margin: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .social-circle li a:hover i,
+  .triggeredHover {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms--transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  
+  .social-circle i {
+    color: #595959;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+  }
+  
+  .social-network a {
+    background-color: #C4C4C4;
+  }
+
+  @media screen and (max-width: 767px) {
+.footer-socmed {
+    text-align: center;
+}  
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++ HALAMAN INDEX +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.hero {
     background-image: url(../images/Bg-Home1.png);
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+.hero-content{
+    margin-top: 60px;
 }
 
+
+
 .bem {
-    font-size: 20px;
+    /* font-size: 20px; */
     color: #D52D36;
     margin-top: 150px;
 }
 
 .kabinet h1 {
     font-weight: 900;
-    font-size: 50px;
+    /* font-size: 50px; */
 }
 
 .deskripsi p {
-    font-size: 20px;
+    /* font-size: 20px; */
     color: #656B78;
     margin-top: 30px;
 }
 
-#laptop {
-    margin-left: 111px;
-}
-
 #btn-more {
-    /* margin-top: -250px; */
     border-radius: 15px;
     padding: 20px 40px;
     background-color: #D52D36;
     border-color: #D52D36;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
 }
+
+@media screen and (max-width: 767px) {
+    .hero{
+        background-image: none;
+        text-align: center;
+        height: auto;
+    }
+    .hero-content {
+        margin-top: 10px;
+    }
+    
+    #btn-more {
+        padding: 10px 30px;
+    }
+    }
 
 /* section vidpro */
 
 .video-profile {
-    background-image: url(../images/Bg-Home2.png);
+    background-image: url(../images/bgHome2.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     width: 100%;
-    height: 911px;
+    height: 100vh;
 }
+
+
+
 
 .text-main {
     color: #D52D36 !important;
@@ -80,10 +211,23 @@
 .profil {
     font-weight: 700;
 }
-
-#video {
-    margin-top: 80px;
+.yt-video{
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
+
+@media screen and (max-width: 767px) {
+    .video-profile {
+        width: 100%;
+        height: auto;
+    background-size:auto;
+    background-color: #FBFBFB;
+
+    }
+}
+
+
+
 
 /* section acara terkini */
 
@@ -96,26 +240,50 @@
     height: 100%;
 }
 
+.acara-terkini .container {
+    margin-top: 150px;
+}
+
+.btn-lihat {
+    padding-top: 85px;
+}
+
+.img-apresiasi {
+    object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+    .acara-terkini .container {
+        margin-top: 60px;
+    }
+    .apresiasi .container .row {
+        text-align: center;
+    }
+    .btn-lihat {
+        padding-top: 0;
+    }
+    }
+
 /* section kabinet */
 
 .presiden {
-    background-image: url(../images/Bg-Home4.png);
+    background-image: url(../images/Bg-Home4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 920px;
+    height: 100vh;
 }
 
-.foto {
-    text-align: center;
-    margin-left: 40px;
-    margin-top: 150px;
-}
+
+
 
 #card-kabinet {
     background-color: transparent !important;
     border: transparent !important;
+    text-align: center;
+    margin-top: 150px;
+
 }
 
 #foto-kabinet {
@@ -126,24 +294,38 @@
     color: #D52D36 !important;
 }
 
+@media screen and (max-width: 768px) {
+.presiden{
+    height: auto;
+    }
+.foto{
+transform: scale(0.8);
+}
+#card-kabinet{
+    margin-top: -20px;
+
+}
+.sub-header {
+    text-align: center;
+}
+}
+
+@media (min-width: 768px) { 
+    
+ }
+
+
+
 /* box dibuat oleh */
 
-#box-made-by {
+/* #box-made-by {
     position: absolute;
     margin-top: -30px;
-}
+} */
 
-#telkom-footer {
-    background-image: url(../images/Bg-Footer.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 531px;
-    position: absolute;
-}
 
-/*publikasi*/
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++  HALAMAN PUBLIKASI   ++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 .berita-terkini {
     align-items: center;
@@ -167,17 +349,41 @@
     position: relative;
 }
 
-.bg-gambar {
-    background-image: url(../images/bg-publikasi.png);
+.bg-gambar-atas {
     width: 100%;
     background-repeat: no-repeat;
     position: absolute;
-    float: right;
+     right: 0;
 }
 
-/*kementerian*/
+.img-berita-lain{
+    object-fit: cover;
+}
 
-.bg-menteri {
+a.link-berita {
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.link-berita:hover{
+    text-decoration: none;
+    color: #F54F6D;
+
+}
+
+@media screen and (min-width: 767px) {
+    .bg-gambar-atas {
+        width: 50%;
+       
+    }
+   
+}
+
+
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++   HALAMAN KEMENTRIAN ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.visi-misi {
     background-image: url(../images/bg-menteri.png);
     margin-top: 150px;
     width: 100%;
@@ -248,6 +454,12 @@
     margin-left: 30px;
     margin-top: 65px;
     line-height: 35px;
+}
+.logo-bg-menteri{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .bg-menteri2 {
@@ -376,13 +588,9 @@
 }
 
 .bg-menteri5 {
-    background-image: url(../images/bg-menteri5.png);
+   background-color: #FBFBFB;
     /* margin-top: 150px; */
-    width: 1520px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 2800px;
+    width: 100%;
 }
 
 #foto-menteri1 {
@@ -392,157 +600,52 @@
     margin-top: -115px;
 }
 
-#foto-menteri2 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 420px;
-    margin-top: -642px;
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++ HALAMAN PROKER ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.tugas-misi{
+    position: relative;
 }
-
-#foto-menteri3 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 740px;
-    margin-top: -790px;
-}
-
-#foto-menteri4 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 1065px;
-    margin-top: -942px;
-}
-
-#foto-menteri5 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 100px;
-    margin-top: -550px;
-}
-
-#foto-menteri6 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 420px;
-    margin-top: -700px;
-}
-
-#foto-menteri7 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 740px;
-    margin-top: -850px;
-}
-
-#foto-menteri8 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 1060px;
-    margin-top: -1000px;
-}
-
-#foto-menteri9 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 100px;
-    margin-top: -610px;
-}
-
-#foto-menteri10 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 420px;
-    margin-top: -760px;
-}
-
-#foto-menteri11 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 740px;
-    margin-top: -910px;
-}
-
-#foto-menteri12 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 1060px;
-    margin-top: -1060px;
-}
-
-#foto-menteri13 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 280px;
-    margin-top: -640px;
-}
-
-#foto-menteri14 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 600px;
-    margin-top: -790px;
-}
-
-#foto-menteri15 {
-    width: 250px;
-    border-radius: 1.25rem;
-    margin-left: 920px;
-    margin-top: -940px;
-}
-
-/*PROKER*/
-
 #proker {
-    width: 180%;
     padding-top: 110px;
-    margin-left: 60px;
 }
 
+#card-foto-ristek{
+     background-color: transparent !important;
+    border: transparent !important;
+    text-align: center;
+}
 .kemenristek h3 {
+  text-align: center;
+
     font-size: 20px;
     margin-top: 130px;
-    margin-left: 500px;
     font-weight: 800;
 }
 
 .kemenristek h1 {
-    font-size: 35px;
-    margin-left: 250px;
-    margin-top: 25px;
+  text-align: center;
     font-weight: 900;
+    margin: 20px 0;
 }
-
+.content-header{
+    margin-top: 200px;
+}
 #foto-ristek {
-    width: 250px;
+  
     border-radius: 1.25rem;
-    margin-left: 50px;
-    margin-top: -50px;
 }
-
-.nama {
-    margin-left: -730px;
-}
-
 .jurusan {
-    margin-left: -730px;
     color: #656B78;
     font-size: 15px;
 }
-
 .posisi {
     color: #D52D36 !important;
     font-weight: 600;
-    margin-left: -730px;
 }
 
 .card-ristek {
-    margin-left: 400px;
-    margin-top: -415px;
-    width: 580px;
-    height: 262px;
+   
     background: #FAFAFA;
     border: 2px solid #E2E2E2;
-    box-sizing: border-box;
     border-radius: 20px;
     border-top-right-radius: 80px;
 }
@@ -557,10 +660,11 @@
     position: center;
 }
 
-.plus-ristek {
-    width: 120px;
-    margin-left: 500px;
-    margin-top: -550px;
+.plus-ristek{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
 }
 
 .staff-ristek {
@@ -568,7 +672,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1520px;
+    width: 100%;
     height: 1290px;
     margin-top: 20px;
 }
@@ -609,10 +713,7 @@
 }
 
 .card-ristek2 {
-    margin-left: 70px;
-    margin-top: 55px;
-    width: 900px;
-    height: 262px;
+  
     background: #FAFAFA;
     border: 2px solid #E2E2E2;
     box-sizing: border-box;
@@ -633,21 +734,18 @@
 .judul-misi {
     font-size: 28px;
     margin-top: 100px;
-    margin-left: 780px;
+ 
     font-weight: 900;
 }
 
 .misi-ristek {
     margin-top: -70px;
-    margin-left: 650px;
+   
     width: 15%;
 }
 
 .card-ristek3 {
-    margin-left: 170px;
-    margin-top: -55px;
-    width: 900px;
-    height: 262px;
+    float: right;
     background: #FAFAFA;
     border: 2px solid #E2E2E2;
     box-sizing: border-box;
@@ -656,40 +754,45 @@
 }
 
 .proker-ristek {
-    background-image: url(../images/bg-proker2.png);
+    background-image: url(../images/bg-proker2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1520px;
-    height: 1400px;
+    width: 100%;
+    height: 100vh;
     margin-top: 20px;
 }
 
-.icon-proker {
-    width: 16%;
-    margin-top: 80px;
-    margin-left: 470px;
-}
+
 
 .proker-kemenristek {
     font-size: 30px;
     font-weight: 900;
     margin-top: -70px;
-    margin-left: 400px;
+    text-align: center;
+
+   
 }
 
-.card-proker {
+#card-proker {
     background: #FFFFFF;
     box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
-    width: 350px;
-    height: 400px;
-    margin-top: 50px;
+    border: none;
+    margin-bottom: 20px;
+  
 }
 
-.card-proker h1{
-    margin-top: 20px;
-    margin-left: 10px;
-    font-size: 25px;
-    font-weight: 900;
+#card-proker h5{
+   
+    font-weight: bolder;
+}
+
+.judul-proker::after {
+    content: " ";
+    display: block;
+    border: 2px solid #D52D36;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 15%;
 }
