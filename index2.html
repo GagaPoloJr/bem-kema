@@ -20,6 +20,7 @@
 </head>
 
 <body>
+  <!-- navbar mulai -->
   <nav class="navbar navbar-expand-lg navbar-light bg-transparent shadow p-1 mb-1 bg-white rounded">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -89,11 +90,29 @@
               </li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a href="#search" style="background-color: #242424; border-radius: 10px; padding: 10px 14px;"
+              class="btn btn-primary nav-link ml-auto" href="#searchForm" data-target="#searchForm"
+              data-toggle="collapse">
+              <i class="fa fa-search text-white"></i>
+            </a>
+          </li>
         </ul>
-
       </div>
     </div>
   </nav>
+  <div id="search">
+    <button style="background-color: #D52D36; border-color: #D52D36; ; color: white;" type="button"
+      class="close">×</button>
+    <form>
+      <input type="search" value="" placeholder="Tulis keyword disini" />
+      <button style="background-color: #D52D36; border-color: #D52D36; ; color: white;" type="submit"
+        class="btn btn-primary">Search</button>
+    </form>
+  </div>
+
+  <!-- navbar selesai -->
+
 
   <section class="hero">
     <div class="container">
@@ -277,33 +296,38 @@
       </div>
     </div>
   </section>
-  <div class=" container  p-1 mb-1 bg-white rounded">
-    <div class="info-panel mx-auto col-lg-10">
-      <div class=" row justify-content-center">
-        <div class="col-md-12">
-          <p style="color: #979797; float: left;">Website oleh</p>
-        </div>
-        <div class="col-md-5">
-          <h4>Kementrian Riset dan teknologi</h4>
-        </div>
-        <div class="col-md-1">
-          X
-        </div>
-        <div class="col-md-2">
-          <img src="assets/images/lab-integrasi.png" alt="">
-        </div>
-        <div class="col-md-2">
-          <img src="assets/images/data-science.png" alt="">
-        </div>
-        <div class="col-md-2">
-          <img src="assets/images/mobile-inovasi.png" alt="">
+  
+    <div  class=" container  p-1 mb-1 rounded">
+      <div class="info-panel mx-auto col-lg-10">
+        <div class=" row justify-content-center">
+          <div class="col-md-12">
+            <p class="info-header" >Website oleh</p>
+          </div>
+          <div class="col-md-6">
+            <h4>Kementrian Riset dan teknologi</h4>
+          </div>
+          <div class="col-md-1">
+            X
+          </div>
+          <div class="col-md-5">
+
+            <img src="assets/images/lab-integrasi.png" class="img-fluid" alt="">
+            <img src="assets/images/data-science.png" class="img-fluid" alt="">
+            <img src="assets/images/mobile-inovasi.png" class="img-fluid" alt="">
+          </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
   <br>
+
+  <!-- footer -->
+  <section id="section-ftco" class="ftco-wrapper">
   <footer class="bg-footer text-lg-start">
-    <div style="padding:5% 10%;" class="container-fluid ">
+    <img  class="icon-footer" src="./assets/images/footer-ornament.png" alt="">
+    <img  class="icon-footer2" src="./assets/images/footer-ornament2.png" alt="">
+
+    <div style="padding:10% 10%;" class="container-fluid ">
       <div class="row">
         <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
           <img src="assets/images/logo-tel.png" class="img-fluid" alt="">
@@ -369,12 +393,12 @@
       </div>
     </div>
   </footer>
+</section>
 
-
+  <!-- akhir footer -->
 
 
   <!-- Optional JavaScript; choose one of the two! -->
-  <script src="./assets/js/main.js"></script>
   <!-- Option 1: Bootstrap Bundle with Popper -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -384,6 +408,8 @@
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
+
   <script>
     AOS.init({
 
